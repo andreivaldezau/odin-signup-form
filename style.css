@@ -18,6 +18,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
 }
 
 body {
@@ -59,8 +61,7 @@ footer > * {
 
 div.logo {
   display: flex;
-  background-color: black;
-  opacity: 50%;
+  background-color: rgb(0 0 0 / 50%);
   margin: 48px 0;
   justify-content: center;
   align-items: center;
@@ -78,15 +79,57 @@ h1 {
   color: white;
 }
 
+main > p {
+  margin: 8px 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
 fieldset.form-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 0;
   background-color: white;
   border: none;
+}
+
+fieldset.form-entry > * {
+  width: 100%;
+  max-width: 60ch;
+  padding: 0 24px;
+}
+
+fieldset.form-entry div.form-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 66ch;
+}
+
+label {
+  font-size: x-small;
+  text-transform: uppercase;
+  padding: 0 0 4px 8px;
+}
+
+input {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+input:focus {
+  border-color: black;
+}
+
+input:invalid {
+  border-color: red;
 }
 
 p {
@@ -94,10 +137,9 @@ p {
 }
 
 p.call-to-action {
-  font-size: 1.2rem;
+  font-size: large;
   font-weight: bold;
   padding: 0 24px;
-  margin-bottom: 24px;
 }
 
 .form-row button {
