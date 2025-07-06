@@ -99,6 +99,7 @@ fieldset.form-entry {
   padding: 16px 0;
   background-color: white;
   border: none;
+  box-shadow: 0 4px 4px lightgray;
 }
 
 fieldset.form-entry > * {
@@ -120,12 +121,13 @@ label {
 }
 
 input {
+  border-color: #e5e7eb;
   border-radius: 8px;
   padding: 8px;
 }
 
 input:focus {
-  border-color: black;
+  box-shadow: 4px 4px 4px black;
 }
 
 input:invalid {
@@ -144,6 +146,7 @@ p.call-to-action {
 
 .form-row button {
   background-color: #596d48;
+  margin: 8px;
   padding: 16px;
   border: none;
   border-radius: 8px;
